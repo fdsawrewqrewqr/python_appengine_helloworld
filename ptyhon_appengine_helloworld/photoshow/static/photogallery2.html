@@ -1,0 +1,389 @@
+<html>
+	<head>
+		<style>
+		body{
+			background-color: darkred;
+			height: auto; 
+			/*overflow-x: hidden;*/
+			/*overflow-y: hidden;*/
+		}
+			
+		.header{
+			width: 500px; 
+			border: 2px solid silver;
+			background-image: linear-gradient(bottom, rgb(117,115,117) 0%, rgb(217,217,217) 50%, rgb(250,250,250) 76%, rgb(219,219,219) 88%);
+			background-image: -o-linear-gradient(bottom, rgb(117,115,117) 0%, rgb(217,217,217) 50%, rgb(250,250,250) 76%, rgb(219,219,219) 88%);
+			background-image: -moz-linear-gradient(bottom, rgb(117,115,117) 0%, rgb(217,217,217) 50%, rgb(250,250,250) 76%, rgb(219,219,219) 88%);
+			background-image: -webkit-linear-gradient(bottom, rgb(117,115,117) 0%, rgb(217,217,217) 50%, rgb(250,250,250) 76%, rgb(219,219,219) 88%);
+			background-image: -ms-linear-gradient(bottom, rgb(117,115,117) 0%, rgb(217,217,217) 50%, rgb(250,250,250) 76%, rgb(219,219,219) 88%);
+			box-shadow: 0px 3px 10px 0px black, inset 0px 0px 5px 0px black;
+			border-radius: 20%;
+			position: absolute;
+			top:20px;
+			left:260px;
+			z-index:1; 
+		}
+		
+		h1{
+			text-align: center; 
+			font-style:oblique;
+			font-size:25px;
+			color: black; 
+		}
+
+		.strip{
+			width: 200px;
+			height: 690px;
+			position: absolute;
+			top: -10%;
+			background-color: black;
+		}
+
+		.stripl{
+			left: 0px; 
+		}
+		
+		.stripr{
+			left: 827px; 
+		}
+		
+		.perforation{
+			width: 10px;
+			height: 20px;
+			border-radius: 30%;
+			background-color: white;
+			position: relative;
+			border: 5px solid black;
+		}
+		
+		.white{
+			top: -80px;
+			left: -10px;
+		}
+		
+		.white2{
+			top: -770px;
+			left: 170px;
+		}
+		
+		.white3{
+			top: -1460px;
+			left: 820px;
+		}
+		
+		.white4{
+			top: -2150px;
+			left: 998px;
+		}
+
+		span{
+			background-size: 450px 300px;
+			width:450px;
+			height:300px;
+			z-index:2;
+			position: absolute;
+			visibility:hidden;
+			border: 3px ridge silver;
+			border-radius: 10%;
+			box-shadow: 5px 5px 5px 0px black, inset 0px 0px 8px 0px black;
+        }
+
+		.foto{
+			background-size: 150px 100px;
+			border-radius: 10%;
+			border: 3px solid white;
+			width: 150px;
+			height: 100px;
+			position: absolute;
+			box-shadow: inset 0px 0px 8px 0px black;
+		}
+		
+		.foto1{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050199.jpg');
+			top: 14px;
+			left: 20px;
+		}
+
+		.foto1 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050199.jpg');
+			top: 200px;
+			left: 265px;
+		}
+			
+		.foto1:hover span{
+			visibility:visible;
+		}
+			
+		.foto2{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050379.jpg');
+			top: 136px;
+			left: 20px;
+		}	
+
+		.foto2 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050379.jpg');
+			top: 78px;
+			left: 265px;
+		}
+			
+		.foto2:hover span{
+			visibility:visible;
+		}	
+			
+		.foto3{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050257.jpg');
+			top: 258px;
+			left: 20px;
+		}	
+
+		.foto3 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050257.jpg');
+			top: -44px;
+			left: 265px;
+		}
+			
+		.foto3:hover span{
+			visibility:visible;
+		}	
+			
+		.foto4{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050268.jpg');
+			top: 380px;
+			left: 20px;
+		}
+			
+		.foto4 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050268.jpg');
+			top: -166px;
+			left: 265px;
+		}
+			
+		.foto4:hover span{
+			visibility:visible;
+		}	
+			
+		.foto5{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050117.jpg');
+			top: 502px;
+			left: 20px;
+		}
+				
+		.foto5 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050117.jpg');
+			top: -288px;
+			left: 265px;
+		}
+			
+		.foto5:hover span{
+			visibility:visible;
+		}		
+		.foto6{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050220.jpg');
+			top: 14px;
+			left: 850px;
+		}
+			
+		.foto6 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050220.jpg');
+			top: 200px;
+			left: -565px;
+		}
+			
+		.foto6:hover span{
+			visibility:visible;
+		}			
+			
+		.foto7{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050301.jpg');
+			top: 136px;
+			left: 850px;
+		}	
+			
+		.foto7 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050301.jpg');
+			top: 78px;
+			left: -565px;
+		}
+			
+		.foto7:hover span{
+			visibility:visible;
+		}			
+			
+		.foto8{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050152.jpg');
+			top: 258px;
+			left: 850px;
+		}		
+			
+		.foto8 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050152.jpg');
+			top: -44px;
+			left: -565px;
+		}
+			
+		.foto8:hover span{
+			visibility:visible;
+		}			
+			
+		.foto9{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050407.jpg');
+			top: 380px;
+			left: 850px;
+		}
+		
+		.foto9 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050407.jpg');
+			top: -166px;
+			left: -565px;
+		}
+			
+		.foto9:hover span{
+			visibility:visible;
+		}		
+		
+		.foto10{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050166.jpg');
+			top: 502px;
+			left: 850px;
+		}
+		
+		.foto10 span{
+			background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050166.jpg');
+			top: -288px;
+			left: -565px;
+		}
+			
+		.foto10:hover span{
+			visibility:visible;
+		}		
+		
+		p{
+			position: absolute; 
+			top: 350px; 
+			left: 290px; 
+			font-style: bold;
+			font-size:20px;
+			color: dimgrey; 
+		}
+		
+		a{
+			position: absolute; 
+			top: 400px; 
+			left: 450px; 
+			font-style: bold;
+			font-size:15px;
+			color: dimgrey; 
+		}
+		
+		</style>
+	</head>
+	<body>
+		<div class="header"><h1>Photo Gallery</h1></div>
+		<div class="strip stripl"> </div>
+		<div class="strip stripr"> </div>
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>		
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>		
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>		
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>		
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>		
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>		
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>		
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>		
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>		
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>
+		<div class="perforation white"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white2"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white3"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="perforation white4"> </div>
+		<div class="foto foto1"> <span> </span> </div>
+		<div class="foto foto2"> <span> </span> </div>
+		<div class="foto foto3"> <span> </span> </div>
+		<div class="foto foto4"> <span> </span> </div>
+		<div class="foto foto5"> <span> </span> </div>
+		<div class="foto foto6"> <span> </span> </div>
+		<div class="foto foto7"> <span> </span> </div>
+		<div class="foto foto8"> <span> </span> </div>
+		<div class="foto foto9"> <span> </span> </div>
+		<div class="foto foto10"> <span> </span> </div>
+		<p> Hover Over The Thumbnail To View The Enlarged Photo </p>
+		<a href="http://halls-of-valhalla.org/">halls-of-valhalla.org</a>
+	</body>
+</html>

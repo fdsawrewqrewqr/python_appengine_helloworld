@@ -1,0 +1,15 @@
+application: wedding201303
+version: 2
+runtime: python27
+api_version: 1
+threadsafe: true
+
+handlers:
+- url: /photogallery.html
+  static_files: static/photogallery.html  
+  upload: static/
+  
+  
+- url: /photogallery2.html
+  static_files: static/photogallery2.html  
+  upload: static/

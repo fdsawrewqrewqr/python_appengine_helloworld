@@ -1,0 +1,243 @@
+<html>
+	<head>
+		<style>
+			body{
+				background-color: dimgrey; 
+				margin: 50px; 
+			}
+			
+			.titel{
+				background-color: silver;
+				position: absolute;
+				top: 20px; 
+				width: 880px;
+				border-top-left-radius: 30%;
+				border-top-right-radius: 30%;  
+				border-bottom-left-radius: 10%;
+				border-bottom-right-radius: 10%;  
+				border-top: 3px solid lightgrey; 
+				border-bottom: 3px solid lightgrey;
+				box-shadow: 0px 3px 10px 0px black, inset 0px 0px 8px 0px black;
+			}
+			
+			h1{
+				text-align: center; 
+				font-style:oblique;
+				font-size:25px;
+				color: black; 
+			}
+			
+			.foto{
+				background-size: 150px 100px;
+				border-radius: 10%; 
+				border: 3px solid white; 
+				width: 150px; 
+				height: 100px; 
+				box-shadow: 5px 5px 5px 0px black, inset 0px 0px 8px 0px black;
+			}
+			
+			.foto:hover{
+				background-size: 450px 300px;
+				width:450px;
+				height:300px;
+				z-index:1; 
+				-webkit-transition: all 1s ease;
+				-moz-transition: all 1s ease;
+				-o-transition: all 1s ease;
+				transition: all 1s ease;
+			}
+			
+			.foto1{
+				background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050381.jpg');
+				position: absolute;
+				top: 120px;
+				left: 150px;
+			}
+			
+			.foto2{
+				background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050379.jpg');
+				position: absolute;
+				top: 120px;
+				left: 321px; 
+			}
+			
+			.foto2:hover{
+				position: absolute;
+				top: 120px;
+				left: 225px;
+			}
+			
+			.foto3{
+				background-image:url('http://i537.photobucket.com/albums/ff338/ynori77/P1050257.jpg');
+				position: absolute;
+				top: 120px;
+				left: 492px; 
+			}
+			
+			.foto3:hover{
+				position: absolute;
+				top: 120px;
+				left: 288px;
+			}
+			
+			.foto4{
+				background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050268.jpg');
+				position: absolute;
+				top: 120px;
+				left: 663px;
+			}
+			
+			.foto4:hover{
+				position: absolute;
+				top: 120px;
+				left: 363px;
+			}
+			
+			.foto5{
+				background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050117.jpg');
+				position: absolute;
+				top: 250px;
+				left: 150px; 
+			}
+			
+			.foto5:hover{
+				position: absolute;
+				top: 150px;
+				left: 150px;
+			}
+			
+			.foto6{
+				background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050220.jpg');
+				position: absolute;
+				top: 250px;
+				left: 321px; 
+			}
+			
+			.foto6:hover{
+				position: absolute;
+				top: 150px;
+				left: 225px;
+			}
+			
+			.foto7{
+				background-image:url('http://i537.photobucket.com/albums/ff338/ynori77/P1050301.jpg');
+				position: absolute;
+				top: 250px;
+				left: 492px; 
+			}
+			
+			.foto7:hover{
+				position: absolute;
+				top: 150px;
+				left: 288px;
+			}
+			
+			.foto8{
+				background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050152.jpg');
+				position: absolute;
+				top: 250px;
+				left: 663px;
+			}
+			
+			.foto8:hover{
+				position: absolute;
+				top: 150px;
+				left: 363px;
+			}
+			
+			.foto9{
+				background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050407.jpg');
+				position: absolute;
+				top: 380px;
+				left: 150px; 
+			}
+			
+			.foto9:hover{
+				position: absolute;
+				top: 180px;
+				left: 150px;
+			}
+			
+			.foto10{
+				background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050166.jpg');
+				position: absolute;
+				top: 380px;
+				left: 321px; 
+			}
+			
+			.foto10:hover{
+				position: absolute;
+				top: 180px;
+				left: 225px;
+			}
+			
+			.foto11{
+				background-image:url('http://i537.photobucket.com/albums/ff338/ynori77/butterfly.jpg'); 
+				position: absolute;
+				top: 380px;
+				left: 492px; 
+			}
+			
+			.foto11:hover{
+				position: absolute;
+				top: 180px;
+				left: 288px;
+			}
+			
+			.foto12{
+				background-image: url('http://i537.photobucket.com/albums/ff338/ynori77/P1050199.jpg');
+				position: absolute;
+				top: 380px;
+				left: 663px;
+			}
+			
+			.foto12:hover{ 
+				position: absolute;
+				top: 180px;
+				left: 363px;
+			}
+			
+			.fin{
+				background-color: silver;
+				position: absolute;
+				top: 520px; 
+				width: 880px;
+				height: 10px;
+				border-top-left-radius: 10%;
+				border-top-right-radius: 10%;  
+				border-bottom-left-radius: 30%;
+				border-bottom-right-radius: 30%;  
+				border-top: 3px solid lightgrey; 
+				border-bottom: 3px solid lightgrey;
+				box-shadow: 0px 3px 10px 0px black, inset 0px 0px 8px 0px black;
+			}
+			
+			a{
+				position: absolute; 
+				top: 550px; 
+				left: 427px; 
+				font-style: bold;
+				font-size:15px;
+				color: silver; 
+			}
+			
+		</style>
+	</head>
+	<body>
+		<div class="titel"><h1>Photo Gallery</h1></div>
+		<div class="foto foto1"></div>
+		<div class="foto foto2"></div>
+		<div class="foto foto3"></div>
+		<div class="foto foto4"></div>
+		<div class="foto foto5"></div>
+		<div class="foto foto6"></div>
+		<div class="foto foto7"></div>
+		<div class="foto foto8"></div>
+		<div class="foto foto9"></div>
+		<div class="foto foto10"></div>
+		<div class="foto foto11"></div>
+		<div class="foto foto12"></div>
+		<div class="fin"></div>
+		<a href="http://halls-of-valhalla.org/">halls-of-valhalla.org</a>
+	</body>
+</html>
