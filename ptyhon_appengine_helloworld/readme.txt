@@ -25,3 +25,8 @@ cgi:http://docs.python.org/release/2.7.2/library/cgi.html
 (1) app engineer configure file
 YAML another mark up language
 http://www.yaml.org/
+
+
+
+
+a lot of samples: https://code.google.com/p/google-app-engine-samples/
